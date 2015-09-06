@@ -1,12 +1,13 @@
 var cheerio = require('cheerio');
 var fs = require('fs');
+var config = require('./config');
 var indexedFiles = require('./indexedFiles');
 
 // remove the left column and the nav bar so that it fits dash's usually small
 // browser screen
 indexedFiles.forEach(function(array, index) {
     //console.log(array);
-    var path = __dirname + '/../Contents/Resources/Documents/relay/docs/' + array.name + '.html';
+    var path = __dirname + '/../Contents/Resources/Documents/'+ config.name + '/docs/' + array.name + '.html';
     var src = fs.readFileSync(path, 'utf8');
     var $ = cheerio.load(src);
 
