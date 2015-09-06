@@ -21,6 +21,7 @@ indexedFiles.forEach(function(array, index) {
         $.html();
     });
 
+    // Check to make sure these DOM elements exist on the page.
     $('.nav-main').remove();
     $('.nav-docs').remove();
     $('.container').attr('style', 'min-width:inherit;padding-top:0');

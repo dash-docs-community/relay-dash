@@ -27,9 +27,9 @@ Clone this repo, `cd` into it and do:
 The script will:
 
 - Fetch the newest released Relay documentation from http://facebook.github.io/relay/.
-- Parse the doc site into a new SQLite database for Dash. The list of files are hardcoded. Please check `src/index.js` for more detail.
+- Parse the doc site into a new SQLite database for Dash.
+- Create a json file based on the documentation sections and sub-sections.
 - Bundle up the result in a Relay.docset.
+- GZip for Dash contribution
 
-Test the output by clicking on Relay.docset (importing it into Dash). Then, like it said on [Dash User Contributions](https://github.com/Kapeli/Dash-User-Contributions#contribute-a-new-docset):
-
-    tar --exclude='.DS_Store' -cvzf Relay.tgz Relay.docset
+Test the output by loading the Relay.docset (importing it into Dash).
