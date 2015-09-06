@@ -19,10 +19,17 @@ $section.each(function(i, elem){
     $sectionLink.each(function(i, elem){
         var page = {};
 
+        if(config.ignoreSection.sectionsArray.indexOf($sectionHeader) !== -1) {
+            return;
+        }
+
         // $(this).attr('href') returns ie.(guides-containers.html#content)
         // substring removes last 13 characters '.html#content' from href.
-        // TODO: create a better config pointer
         page.name = $(this).attr('href').substring(0, $(this).attr('href').length - 13);
+
+        if(config.ignorePage.pagesArray.indexOf(page.name) !== -1) {
+            return;
+        }
 
         // set the Dash types based on the doc headers.
         switch ($sectionHeader) {

@@ -12,7 +12,7 @@ function getData() {
         var src = fs.readFileSync(path, 'utf-8');
         var $ = cheerio.load(src);
 
-        var $headers = $('.inner-content h1').first();
+        var $headers = $(config.pageHeader).first();
 
         var names = [];
 

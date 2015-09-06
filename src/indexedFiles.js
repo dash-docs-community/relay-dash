@@ -10,11 +10,6 @@ var indexedFiles = [
         "toc": "Section"
     },
     {
-        "name": "videos",
-        "type": "Guides",
-        "toc": "Section"
-    },
-    {
         "name": "guides-containers",
         "type": "Guides",
         "toc": "Section"

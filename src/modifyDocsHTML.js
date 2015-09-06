@@ -7,11 +7,12 @@ var indexedFiles = require('./indexedFiles');
 // browser screen
 indexedFiles.forEach(function(array, index) {
     //console.log(array);
-    var path = __dirname + '/../Contents/Resources/Documents/'+ config.name + '/docs/' + array.name + '.html';
+    var path = __dirname + '/../Contents/Resources/Documents/' + config.name + '/docs/' + array.name + '.html';
     var src = fs.readFileSync(path, 'utf8');
     var $ = cheerio.load(src);
 
-    var $headers = $('.inner-content h2, .inner-content h3'); //Native Modules (iOS) Callbacks is an h1. facebook?
+    var headerClasses = config.pageSubHeaders.toString();
+    var $headers = $(headerClasses);
 
     $headers.each(function(index, elem) {
         $('.edit-github').remove();
@@ -22,7 +23,6 @@ indexedFiles.forEach(function(array, index) {
         $.html();
     });
 
-    // Check to make sure these DOM elements exist on the page.
     $('.nav-main').remove();
     $('.nav-docs').remove();
     $('.container').attr('style', 'min-width:inherit;padding-top:0');
