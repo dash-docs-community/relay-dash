@@ -10,6 +10,16 @@ var indexedFiles = [
         "toc": "Section"
     },
     {
+        "name": "thinking-in-graphql",
+        "type": "Guides",
+        "toc": "Section"
+    },
+    {
+        "name": "thinking-in-relay",
+        "type": "Guides",
+        "toc": "Section"
+    },
+    {
         "name": "guides-containers",
         "type": "Guides",
         "toc": "Section"
