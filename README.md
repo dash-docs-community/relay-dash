@@ -1,5 +1,7 @@
 # [Relay](http://facebook.github.io/relay/) documentation for [Dash](http://kapeli.com/dash)
 
+[![Known Vulnerabilities](https://snyk.io/test/github/epitaphmike/relay-dash/badge.svg)](https://snyk.io/test/github/epitaphmike/relay-dash)
+
 ## Installation in Dash
 
 **To install the Relay documentation in Dash, go to:**

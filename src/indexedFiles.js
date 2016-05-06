@@ -95,6 +95,11 @@ var indexedFiles = [
         "toc": "Property"
     },
     {
+        "name": "api-reference-relay-renderer",
+        "type": "Library",
+        "toc": "Property"
+    },
+    {
         "name": "api-reference-relay-root-container",
         "type": "Library",
         "toc": "Property"
