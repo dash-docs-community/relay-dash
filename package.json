@@ -10,8 +10,9 @@
   "dependencies": {
     "cheerio": "^0.19.0",
     "lodash.flatten": "^3.0.2",
-    "sequelize": "^3.0.0",
-    "sqlite3": "^3.0.9"
+    "sequelize": "^3.30.4",
+    "snyk": "^1.42.6",
+    "sqlite3": "^3.1.13"
   },
   "keywords": [
     "Relay",
@@ -24,12 +25,15 @@
   ],
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "snyk test",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "author": "Michael Sharer <m@29degre.es> (http://29degre.es)",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/epitaphmike/relay-dash/issues"
   },
-  "homepage": "https://github.com/epitaphmike/relay-dash"
+  "homepage": "https://github.com/epitaphmike/relay-dash",
+  "snyk": true
 }

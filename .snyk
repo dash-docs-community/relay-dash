@@ -1,0 +1,35 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.7.1
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:debug:20170905':
+    - sqlite3 > node-pre-gyp > tar-pack > debug:
+        patched: '2017-10-12T16:52:43.828Z'
+  'npm:minimatch:20160620':
+    - sqlite3 > node-pre-gyp > tar-pack > rimraf > glob > minimatch:
+        patched: '2017-10-12T16:52:43.828Z'
+    - sqlite3 > node-pre-gyp > tar-pack > fstream > rimraf > glob > minimatch:
+        patched: '2017-10-12T16:52:43.828Z'
+    - sqlite3 > node-pre-gyp > tar-pack > fstream-ignore > fstream > rimraf > glob > minimatch:
+        patched: '2017-10-12T16:52:43.828Z'
+    - sqlite3 > node-pre-gyp > tar-pack > tar > fstream > rimraf > glob > minimatch:
+        patched: '2017-10-12T16:52:43.828Z'
+    - sqlite3 > node-pre-gyp > rimraf > glob > minimatch:
+        patched: '2017-10-12T16:52:43.828Z'
+    - sqlite3 > node-pre-gyp > tar > fstream > rimraf > glob > minimatch:
+        patched: '2017-10-12T16:52:43.828Z'
+    - sqlite3 > node-pre-gyp > tar-pack > fstream-ignore > minimatch:
+        patched: '2017-10-12T16:52:43.828Z'
+  'npm:ms:20170412':
+    - sqlite3 > node-pre-gyp > tar-pack > debug > ms:
+        patched: '2017-10-12T16:52:43.828Z'
+  'npm:qs:20170213':
+    - sqlite3 > node-pre-gyp > request > qs:
+        patched: '2017-10-12T16:52:43.828Z'
+  'npm:tough-cookie:20160722':
+    - sqlite3 > node-pre-gyp > request > tough-cookie:
+        patched: '2017-10-12T16:52:43.828Z'
+  'npm:tough-cookie:20170905':
+    - sqlite3 > node-pre-gyp > request > tough-cookie:
+        patched: '2017-10-12T16:52:43.828Z'
