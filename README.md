@@ -1,6 +1,6 @@
 # [Relay](http://facebook.github.io/relay/) documentation for [Dash](http://kapeli.com/dash)
 
-[![Known Vulnerabilities](https://snyk.io/test/github/epitaphmike/relay-dash/badge.svg)](https://snyk.io/test/github/epitaphmike/relay-dash)
+[![Known Vulnerabilities](https://snyk.io/test/github/epitaphmike/relay-dash/badge.svg)](https://snyk.io/test/github/epitaphmike/relay-dash)[![Build Status](https://travis-ci.org/epitaphmike/redux-dash.svg?branch=master)](https://travis-ci.org/epitaphmike/redux-dash)
 
 ## Installation in Dash
 
